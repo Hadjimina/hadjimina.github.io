@@ -104,7 +104,6 @@ h2 {
 	background: url('../img/ico_loading.gif') no-repeat center center;
 }
 section {
-	min-width: 960px;
 	opacity: 0;
 }
 .loaded section,
@@ -191,7 +190,7 @@ main {
 	display: table-cell;
 	vertical-align: middle;
 	color: #ebebeb;
-	padding: 0 8%;
+	padding: 0 auto;
 	text-align: center;
 	position: relative;
 	z-index: 10;
