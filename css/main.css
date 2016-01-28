@@ -203,7 +203,8 @@ main {
 		margin-bottom: 12px;
 	}
 	.hsContent p {
-		width: 600px;
+    min-width: 270px;
+		width: 40%;
 		margin: 0 auto;
 		color: #ffffff;
     font-size: 20px;
@@ -493,4 +494,8 @@ margin: auto;
 /*icons*/
 span.icon {
   font-family: 'Glyphicons Halflings';
+}
+
+.quote{
+  padding-left: 3%;
 }
