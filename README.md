@@ -5,3 +5,4 @@
 | Text is animated as if it were being typed| blue-orange-black colour scheme | 
 
 It's really just a simple personal website with all that parallax goodness.
+Check it out at [hadjimina.github.io](http://hadjimina.github.io)
