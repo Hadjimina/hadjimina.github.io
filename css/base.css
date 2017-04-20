@@ -1,0 +1,339 @@
+/* ============================================================
+  RESET - http://meyerweb.com/eric/tools/css/reset/
+============================================================ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ============================================================
+  BOX SIZING & CLEARFIX
+============================================================ */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* ============================================================
+  HTML & BODY
+============================================================ */
+
+body {
+    background-color: #fc9600;
+    color: #f0f0f0;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ============================================================
+  HEADER & SITE TITLE
+============================================================ */
+
+
+/* header */
+
+@media all and (min-width: 600px) {
+    header .branding {
+        padding-left: 60px;
+    }
+    header .logo {
+        margin-bottom: 0;
+        margin-left: -60px;
+        float: left;
+        width: 60px;
+        height: 60px;
+    }
+    header .logo img {
+        display: block;
+        margin: 0;
+    }
+    header .social {
+        padding: 15px 0;
+        float: right;
+        width: 100%;
+        text-align: right;
+    }
+}
+
+
+/* site title */
+
+.site-title {
+    padding: 5px 0;
+    background-color: #818181;
+    text-align: center;
+}
+
+.site-title h1 {
+    color: #fff;
+}
+
+
+/* ============================================================
+  TEXT LEVEL SEMANTICS
+============================================================ */
+
+a {
+    font-style: italic;
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+a:hover {
+    color: #818181;
+}
+
+
+/* ============================================================
+  fancy buttons
+============================================================ */
+
+.buttons * {
+    transition: all .5s ease;
+}
+
+.buttons {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/* Common style */
+
+.butFrame {
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    height: auto;
+    width: 24%;
+    background: #111;
+    font-family: inherit;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.butFrame img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    opacity: 0.8;
+    position: absolute;
+}
+
+.buttons>.butHeading {
+    clear: both;
+    margin: 0;
+    padding: 4em 1% 0;
+    color: #484B54;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+#buttons>.butHeading:first-child {
+    padding-top: 0em;
+}
+
+.butFrame .butTextWrap {
+    font-family: inherit;
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.butFrame .butTextWrap::before, .butFrame .butTextWrap::after {
+    pointer-events: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+}
+.butFrame .butTextWrap, .butFrame .butTextWrap>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+.butFrame .butTextWrap>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+.butFrame .butHeading {
+    word-spacing: -0.15em;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: inherit;
+}
+.butFrame .butHeading .butText {
+    font-weight: 300;
+}
+.butFrame .butHeading, .butFrame p {
+    margin: 0;
+    color: #fff;
+}
+.butFrame p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+    font-family: inherit;
+}
+
+/* EFFECT */
+.butFrame img {
+    opacity: 0.9;
+    transition: opacity 0.35s;
+    width: 100%;
+    height: auto;
+}
+.butFrame .butTextWrap::before, .butFrame .butTextWrap::after {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+.butFrame .butTextWrap::before {
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+.butFrame .butTextWrap::after {
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+}
+.butFrame .butHeading {
+    padding-top: 10%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+}
+.butFrame p {
+    padding: 10px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+
+/* HOVER STYLES */
+.butFrame:hover img {
+    opacity: 0.4;
+}
+.butFrame:hover .butTextWrap::before, .butFrame:hover .butTextWrap::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.butFrame:hover .butHeading, .butFrame:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* MEDIA QUERIES */
+@media all and (max-width: 950px) and (min-width: 701px) {
+    .butFrame {
+        display: block;
+        width: 47%;
+    }
+}
+@media all and (max-width: 700px) and (min-width: 0px) {
+    .butFrame {
+        display: block;
+        width: 100%;
+    }
+}
+#projGit {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px
+}
