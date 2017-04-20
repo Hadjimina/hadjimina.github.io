@@ -146,9 +146,9 @@ main {
 
 #slide-2 .bcg {
     background: none;
-    background-color: #010101;
+    background-color: rgb(252, 150, 0);
     text-align: center;
-    height: 400px;
+    height: 600px;
 }
 
 #slide-3 .bcg {
@@ -162,9 +162,9 @@ main {
 
 #slide-4 .bcg {
     background: none;
-    background-color: #010101;
+    ackground-color: rgb(252, 150, 0);
     text-align: center;
-    height: 400px;
+    height: 800px;
 }
 
 
@@ -275,6 +275,11 @@ main {
 #quote {
     margin: auto;
     width: 50%;
+}
+
+#quote-mobile {
+    margin: auto;
+    width: 70%;
 }
 
 
