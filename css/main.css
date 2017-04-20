@@ -1,10 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic);
-
-html,
-button,
-input,
-select,
-textarea {
+html, button, input, select, textarea {
     color: #222;
 }
 
@@ -15,6 +10,7 @@ body {
     font-family: 'Roboto Slab', serif;
     font-weight: 100;
 }
+
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -32,6 +28,7 @@ body {
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -45,6 +42,7 @@ hr {
     padding: 0;
 }
 
+
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
@@ -52,6 +50,7 @@ hr {
 img {
     vertical-align: middle;
 }
+
 
 /*
  * Remove default fieldset styles.
@@ -63,6 +62,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -70,6 +70,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Chrome Frame prompt
@@ -82,155 +83,205 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
    Parallax Scroll
    ========================================================================== */
-body, html {
-	height: 100%;
-	min-height: 100%;
-	background-color: #ffffff;
-  font-family: 'Old Standard TT', serif;
-}
-body {
 
+body, html {
+    height: 100%;
+    min-height: 100%;
+    background-color: #ffffff;
+    font-family: 'Old Standard TT', serif;
 }
+
+body {}
+
 .no-js {
-	padding-top: 106px;
+    padding-top: 106px;
 }
+
 h2 {
-	margin-top: 0;
+    margin-top: 0;
 }
+
 .loading {
-  bgcolor="#E6E6FA";
-	background: url('../img/ico_loading.gif') no-repeat center center;
+    bgcolor="#E6E6FA";
+    background: url('../img/ico_loading.gif') no-repeat center center;
 }
+
 section {
-	opacity: 0;
+    opacity: 0;
 }
-.loaded section,
-.no-js section {
-	opacity: 1;
-	-webkit-transition: opacity 300ms ease-out;
-	-moz-transition: opacity 300ms ease-out;
-	transition: opacity 300ms ease-out;
+
+.loaded section, .no-js section {
+    opacity: 1;
+    -webkit-transition: opacity 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out;
+    transition: opacity 300ms ease-out;
 }
+
 main {
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .bcg {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
+
+
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/slide1.jpg')}
+
+#slide-1 .bcg {
+    background-image: url('../img/slide1.jpg')
+}
+
 
 /* Slide 2 */
+
 #slide-2 .bcg {
-  background: none;
-  background-color: #010101;
-  text-align: center;
-  height: 400px;
+    background: none;
+    background-color: #010101;
+    text-align: center;
+    height: 400px;
 }
 
 #slide-3 .bcg {
-  background-image:url('../img/slide3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-image: url('../img/slide3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+
 /* Slide 4 */
+
 #slide-4 .bcg {
-  background: none;
-  background-color: #010101;
-  text-align: center;
-  height: 400px;
+    background: none;
+    background-color: #010101;
+    text-align: center;
+    height: 400px;
 }
 
 
 /* Slide 5 */
-.curtainContainer {width: 100%; height: 100%; position: relative;}
-.curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0}
-.curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
+
+.curtainContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.curtainContainer .curtain {
+    width: 300%;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    opacity: 0
+}
+
+.curtainContainer .copy {
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
 
 #slide-5 .bcg {
-  background-image:url('../img/slide5.jpg')}
+    background-image: url('../img/slide5.jpg')
+}
+
 
 /* Slide 6*/
+
+
 /*
 #slide-6 {position: relative;}
 #slide-6 .bcg2 {background-image:url('../img/bcg_slide-6b.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1}
 #slide-6 .bcg3 {background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2;}*/
 
-#finalDiv{
-  padding-top: 1000px;
-
-  width:100%;
-  background-color:#000000;
-  bottom:0px;
-  color:#ffffff;
-  z-index:-1;
-
+#finalDiv {
+    padding-top: 1000px;
+    width: 100%;
+    background-color: #000000;
+    bottom: 0px;
+    color: #ffffff;
+    z-index: -1;
 }
-.hsContainer {
-	display: table;
 
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	position: relative;
+.hsContainer {
+    display: table;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .hsContent {
-	max-width: 450px;
-	margin: 0px auto 0px auto;
-	display: table-cell;
-	vertical-align: middle;
-	color: #ebebeb;
-	padding: 0 auto;
-	text-align: center;
-	position: relative;
-	z-index: 10;
+    max-width: 450px;
+    margin: 0px auto 0px auto;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ebebeb;
+    padding: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 10;
 }
-	.hsContent h2,
-	.copy h2 {
-		color: #ffffff;
-		font-size: 45px;
-		line-height: 48px;
-		margin-bottom: 12px;
-	}
-	.hsContent p {
+
+.hsContent h2, .copy h2 {
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 12px;
+}
+
+.hsContent p {
     min-width: 270px;
-		width: 40%;
-		margin: 0 auto;
-		color: #ffffff;
+    width: 40%;
+    margin: 0 auto;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 300;
-	}
-	.hsContent a {
-		color: #ffffff;
-		text-decoration: underline;
-	}
+}
 
-  /*USED FOR QUOTE SLIDE*/
-  .hsContent h1{
+.hsContent a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/*USED FOR QUOTE SLIDE*/
+
+.hsContent h1 {
     font-weight: 400;
     font-size: 300%;
     /*margin: 0px 30px 0px auto;*/
-    text-align: left;;
-  }
-	.bgBlack {
-		background-color: rgba(0,0,0,0.75);
-		padding: 3px 10px;
-	}
+    text-align: left;
+}
+
+.bgBlack {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 3px 10px;
+}
+
+#quote {
+    margin: auto;
+    width: 50%;
+}
 
 
-  /* Navigation */
-  /*
+/* Navigation */
+
+
+/*
   NOT CURRENTLY USED, MAYBE LATER
   #slideNav {
   	display: none;
@@ -273,6 +324,7 @@ main {
    Helper classes
    ========================================================================== */
 
+
 /*
  * Image replacement
  */
@@ -292,6 +344,7 @@ main {
     height: 150%;
 }
 
+
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
@@ -300,6 +353,7 @@ main {
     display: none !important;
     visibility: hidden;
 }
+
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
@@ -316,13 +370,13 @@ main {
     width: 1px;
 }
 
+
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -331,6 +385,7 @@ main {
     width: auto;
 }
 
+
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
@@ -338,6 +393,7 @@ main {
 .invisible {
     visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -351,15 +407,17 @@ main {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
+
 
 /*
  * For IE 6/7 only
@@ -369,6 +427,7 @@ main {
 .clearfix {
     *zoom: 1;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -380,12 +439,10 @@ main {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -395,108 +452,112 @@ main {
 @media print {
     * {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        color: #000 !important;
+        /* Black prints faster: h5bp.com/s */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links for images, or javascript/internal links
      */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
         content: "";
     }
-
-    pre,
-    blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     thead {
-        display: table-header-group; /* h5bp.com/t */
+        display: table-header-group;
+        /* h5bp.com/t */
     }
-
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     @page {
         margin: 0.5cm;
     }
-
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
-
-    h2,
-    h3 {
+    h2, h3 {
         page-break-after: avoid;
     }
 }
+
+
 /* TYPED .JS*/
 
-.typed-cursor{
+.typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-.subtitle{
-  font-size: 20px;
-  font-weight: 300;
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.floatimage{
-z-index: 2;
-position: absolute;
-margin: auto;
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.floatimage {
+    z-index: 2;
+    position: absolute;
+    margin: auto;
+}
+
 
 /*icons*/
-span.icon {
-  font-family: 'Glyphicons Halflings';
-}
 
-.quote{
-  padding-left: 3%;
+span.icon {
+    font-family: 'Glyphicons Halflings';
 }
