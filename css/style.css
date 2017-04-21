@@ -79,23 +79,30 @@ section.module.parallax-3 {
 }
 
 
-/*Homeslide*/
+/*All blue slides (refered to as "slides")*/
 
-#homeSlide {
-  padding-top: 50%;
-  padding-bottom: 50%;
+.slides {
+  padding-top: 40%;
+  padding-bottom: 40%;
 }
 
-#homeSlideContainer {
+
+/*Homeslide*/
+
+#fist {
   margin-top: -10%;
+}
+
+.firstLastSlide {
   text-align: center;
   font-family: "Roboto Slab", serif;
   font-size: 30px;
 }
 
-#subtitle {
+.subtitle {
   font-weight: 400;
   font-size: 20px;
+  padding-bottom: 15px;
 }
 
 .element {
@@ -140,8 +147,6 @@ hr {
 
 #quote {
   text-align: left;
-  padding-top: 50%;
-  padding-bottom: 50%;
 }
 
 #siltanen {
@@ -155,14 +160,21 @@ hr {
 
 .buttonWrapper {
   overflow: hidden;
+  text-align: center;
 }
 
-#one {
+#oneButton {
   float: left;
+  background-color: #000000;
 }
 
-#two {
+#twoButton {
   float: left;
+  background-color: #673ab7;
+}
+
+#threeButton {
+  background-color: #4ba687;
 }
 
 @media screen and (max-width: 400px) {
@@ -178,4 +190,86 @@ hr {
     width: auto;
     border: 0;
   }
+}
+
+
+/*Last slide*/
+
+#me {
+  width: 200px;
+  height: auto;
+}
+
+@media screen and (max-width: 400px) {
+  #me {
+    width: 50%;
+    height: auto;
+  }
+}
+
+
+/*link stacking (responsive)*/
+
+.linkWrapper {
+  margin: 0 auto;
+  width: 50%;
+}
+
+#oneLink {
+  float: left;
+}
+
+#twoLink {
+  float: left;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+#threeLink {
+  float: left;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+#fourLink {
+  float: left;
+}
+
+@media screen and (max-width: 950px) {
+  #oneLink {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: auto;
+    border: 0;
+  }
+  #twoLink {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: auto;
+    border: 0;
+  }
+  #threeLink {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: auto;
+    border: 0;
+  }
+  #fourLink {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: auto;
+    border: 0;
+  }
+  .linkWrapper {
+    /*Nothing if too small*/
+  }
+}
+
+.subsubtitle {
+  font-weight: 200;
+  font-size: 15px;
 }

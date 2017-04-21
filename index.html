@@ -4,152 +4,183 @@
 
 
 <head>
-    <!-- title and meta -->
-    <meta charset="utf-8">
-    <meta content="width=device-width,initial-scale=1.0" name="viewport">
-    <meta content="description" name="Philipp Hadjimina personal website">
+  <!-- title and meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0" name="viewport">
+  <meta content="description" name="Philipp Hadjimina personal website">
 
-    <title>Philipp Hadjimina</title>
+  <title>Philipp Hadjimina</title>
 
-    <!-- css -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/style.css">
+  <!-- css -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- js -->
-    <script src="js/modernizr.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="js/typed.js" type="text/javascript"></script>
-    <script>
-        $(function() {
-            $(".element").typed({
-                strings: ["^1000Hi.^1000<br />I'm Philipp"],
-                typeSpeed: 100,
-                backDelay: 500,
-                loop: false,
-                showCursor: false,
-                contentType: 'html', // or text
-                loopCount: false,
-                callback: function() {
-                    // empty
-                },
-                resetCallback: function() {
-                    newTyped();
-                }
-            });
-            $(".reset").click(function() {
-                $("#typed").typed('reset');
-            });
-        });
-    </script>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- js -->
+  <script src="js/modernizr.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/typed.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $(".element").typed({
+        strings: ["^1000Hi.^1000<br />I'm Philipp"],
+        typeSpeed: 100,
+        backDelay: 500,
+        loop: false,
+        showCursor: false,
+        contentType: 'html', // or text
+        loopCount: false,
+        callback: function() {
+          // empty
+        },
+        resetCallback: function() {
+          newTyped();
+        }
+      });
+      $(".reset").click(function() {
+        $("#typed").typed('reset');
+      });
+    });
+  </script>
 
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <main>
+  <div class="wrapper">
+    <main>
 
-            <section class="module parallax parallax-1">
-                <div class="container">
-                    <div id="homeSlide">
-                        <div id="homeSlideContainer">
-                            <h2><div class="element"></div></h2>
-                            <hr>
-                            <h3><div id="subtitle">Personal Website</div></h3>
-                        </div>
-                    </div>
+      <section class="module parallax parallax-1">
+        <div class="container">
+          <div class="slides firstLastSlide" id="first">
+            <h2><div class="element"></div></h2>
+            <hr>
+            <h3><div class="subtitle">Personal Website</div></h3>
+          </div>
+        </div>
+        <img class="containerImage" id="glasses" src="img/glasses.png">
+      </section>
+
+
+      <section class="module content">
+        <div class="container">
+          <h2>About Myself</h2>
+          <p>My name is Philipp Hadjimina and I'm a self taught software developer, Linux enthusiast and a general technology aficionado.<br /> Currently I am studying computer science at the <a href="https://www.ethz.ch/de.html">ETH Zurich</a>.</p>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-2">
+        <div class="container">
+          <div class="slides" id="quote">
+            <h2>"People who are crazy enough to think they can change the world are the ones who do."</h2>
+            <img src="img/siltanen.png" id="siltanen">
+            <div id="subtitle">Rob Siltanen</div>
+
+          </div>
+        </div>
+        <img class="containerImage" id="laptop" src="img/laptop.png">
+      </section>
+
+      <section class="module content">
+
+        <div class="container">
+
+          <h2>Personal Projects</h2>
+          <div class="buttons buttonWrapper">
+            <div id="oneButton" class="butFrame" onclick="window.location='https://github.com/Hadjimina/WWDC2016'">
+              <img src="img/wwdc.png" />
+              <div class="butTextWrap">
+                <div class="butHeading">WWDC Submission
+                  <br />
+                  <div class="butText">Swift App</div>
                 </div>
-                <img class="containerImage" id="glasses" src="img/glasses.png">
-            </section>
+                <p><img id="projGit" src="img/github.png"></p>
+              </div>
+            </div>
 
-
-            <section class="module content">
-                <div class="container">
-                    <h2>About Myself</h2>
-                    <p>My name is Philipp Hadjimina and I'm a self taught software developer, Linux enthusiast and a general technology aficionado.<br /> Currently I am studying computer science at the <a href="https://www.ethz.ch/de.html">ETH Zurich</a>.</p>
+            <div id="twoButton" class="butFrame" onclick="window.location='https://hadjimina.github.io/TensorFlowPlayground'">
+              <img src="img/tfpl.png" />
+              <div class="butTextWrap">
+                <div class="butHeading">Tensorflow Playground
+                  <br />
+                  <div class="butText">Machine Learning</div>
                 </div>
-            </section>
+                <p><img id="projGit" src="img/github.png"></p>
+              </div>
+            </div>
 
-            <section class="module parallax parallax-2">
-                <div class="container">
-                    <div id="quote">
-                        <h2>"People who are crazy enough to think they can change the world are the ones who do."</h2>
-                        <img src="img/siltanen.png" id="siltanen">
-                        <div id="subtitle">Rob Siltanen</div>
-
-                    </div>
+            <div id="threeButton" class="butFrame" onclick="window.location='https://github.com/Hadjimina/grocr2'">
+              <img src="img/grocr.png" />
+              <div class="butTextWrap">
+                <div class="butHeading">Grocr
+                  <br />
+                  <div class="butText">Android App</div>
                 </div>
-                <img class="containerImage" id="laptop" src="img/laptop.png">
-            </section>
+                <p><img id="projGit" src="img/github.png"></p>
+              </div>
+            </div>
 
-            <section class="module content">
-                <div class="container">
-                    <h2>Personal Projects</h2>
-
-
-                    <div class="buttons buttonWrapper">
-                        <div id="one" class="butFrame" onclick="window.location='https://github.com/Hadjimina/WWDC2016'">
-                            <img src="img/wwdc.png" />
-                            <div class="butTextWrap">
-                                <div class="butHeading">WWDC Submission
-                                    <br />
-                                    <div class="butText">Swift App</div>
-                                </div>
-                                <p><img id="projGit" src="img/github.png"></p>
-                            </div>
-                        </div>
-
-                        <div id="two" class="butFrame" onclick="window.location='https://hadjimina.github.io/TensorFlowPlayground'">
-                            <img src="img/tfpl.png" />
-                            <div class="butTextWrap">
-                                <div class="butHeading">Tensorflow Playground
-                                    <br />
-                                    <div class="butText">Machine Learning</div>
-                                </div>
-                                <p><img id="projGit" src="img/github.png"></p>
-                            </div>
-                        </div>
-
-                        <div id="three" class="butFrame" onclick="window.location='https://github.com/Hadjimina/WWDC2016'">
-                            <img src="img/wwdc.png" />
-                            <div class="butTextWrap">
-                                <div class="butHeading">WWDC Submission
-                                    <br />
-                                    <div class="butText">Swift App</div>
-                                </div>
-                                <p><img id="projGit" src="img/github.png"></p>
-                            </div>
-                        </div>
+          </div>
 
 
-                    </div>
+        </div>
+      </section>
 
+      <section class="module parallax parallax-3">
+        <div class="container">
+
+          <div class="slides firstLastSlide" id="last">
+            <img src="img/me.png" id="me">
+            <h2>Thanks for visiting</h2>
+            <hr>
+            <h3><div class="subtitle">Get in touch.</div></h3>
+            <div class="linkWrapper">
+              <div class="subsubtitle">
+
+                <div id="oneLink">
+                  <a href="https://Github.com/Hadjimina">
+                    <img src="img/github.png"><br /> Hadjimina
+                  </a>
                 </div>
-            </section>
-
-            <section class="module parallax parallax-3">
-                <div class="container">
-                    <h1>Calm</h1>
+                <div id="twoLink">
+                  <a href="mailto:p.m.hadjimina@gmail.com">
+                    <img src="img/email.png"> <br />p.m.hadjimina@gmail.com
+                  </a>
                 </div>
-            </section>
-
-            <section class="module content">
-                <div class="container">
-                    <h2>Lorem Ipsum Dolor</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam in repudiandae architecto placeat, illum atque quasi explicabo, culpa, molestias!Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut quaerat, quasi iste voluptate et dolorem atque sed neque voluptates, molestias dolor enim!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam, molestias nesciunt modi, at debitis maxime sunt et quo quas labore perferendis.Lorem ipsum dolor
-                        sit amet, consectetur adipisicing elit. Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam excepturi corporis!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
+                <div id="threeLink">
+                  <a href="https://linkedin.com/in/pmhadjimina">
+                    <img src="img/linkedin.png"> <br />pmhadjimina
+                  </a>
                 </div>
-            </section>
+                <div id="fourLink">
+                  <a href="cv.pdf">
+                    <img src="img/cv.png"> <br />Resume
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
 
-        </main>
-        <!-- /main -->
+      <!-- <section class="module content">
+        <div class="container">
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam in repudiandae architecto placeat, illum atque quasi explicabo, culpa, molestias!Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut quaerat, quasi iste voluptate et dolorem atque sed neque voluptates, molestias dolor enim!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam, molestias nesciunt modi, at debitis maxime sunt et quo quas labore perferendis.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam excepturi corporis!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
+        </div>
+      </section> -->
+
+    </main>
+    <!-- /main -->
 
     </div>
     <!-- /#wrapper -->
