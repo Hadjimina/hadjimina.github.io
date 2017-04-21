@@ -1,0 +1,275 @@
+/* ============================================================
+  SECTIONS
+============================================================ */
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+section.module p:last-child {
+  margin-bottom: 0;
+}
+
+section.module.content {
+  padding: 40px 0;
+  padding-top: 80px;
+  background-color: #fc9600;
+}
+
+section.module.parallax {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax-1 {
+  background-image: url("../img/slide1.jpg");
+}
+
+section.module.parallax-2 {
+  background-image: url("../img/slide3.jpg");
+}
+
+section.module.parallax-3 {
+  background-image: url("../img/slide5.jpg");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 100px;
+  }
+}
+
+
+/*All blue slides (refered to as "slides")*/
+
+.slides {
+  padding-top: 40%;
+  padding-bottom: 40%;
+}
+
+
+/*Homeslide*/
+
+#fist {
+  margin-top: -10%;
+}
+
+.firstLastSlide {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.element {
+  height: 3em;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+
+hr {
+  margin-top: -30px;
+  background-color: #f0f0f0;
+  height: 1px;
+  border: 0;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*First container*/
+
+.containerImage {
+  height: 15%;
+  width: auto;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  margin-top: -4%;
+}
+
+@media (min-resolution: 1dppx) {
+  #glasses {
+    max-height: 100px;
+  }
+}
+
+
+/*Quote slide*/
+
+#quote {
+  text-align: left;
+}
+
+#siltanen {
+  float: left;
+  margin-top: -16px;
+  margin-right: 10px;
+}
+
+
+/*buttons stacking (responsive)*/
+
+.buttonWrapper {
+  overflow: hidden;
+  text-align: center;
+}
+
+#oneButton {
+  float: left;
+  background-color: #000000;
+}
+
+#twoButton {
+  float: left;
+  background-color: #673ab7;
+}
+
+#threeButton {
+  background-color: #4ba687;
+}
+
+@media screen and (max-width: 400px) {
+  #one {
+    float: none;
+    margin-right: 0;
+    width: auto;
+    border: 0;
+  }
+  #two {
+    float: none;
+    margin-right: 0;
+    width: auto;
+    border: 0;
+  }
+}
+
+
+/*Last slide*/
+
+#me {
+  width: 200px;
+  height: auto;
+}
+
+@media screen and (max-width: 400px) {
+  #me {
+    width: 50%;
+    height: auto;
+  }
+}
+
+
+/*link stacking (responsive)*/
+
+.linkWrapper {
+  margin: 0 auto;
+  width: 50%;
+}
+
+#oneLink {
+  float: left;
+}
+
+#twoLink {
+  float: left;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+#threeLink {
+  float: left;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+#fourLink {
+  float: left;
+}
+
+@media screen and (max-width: 950px) {
+  #oneLink {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: auto;
+    border: 0;
+  }
+  #twoLink {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: auto;
+    border: 0;
+  }
+  #threeLink {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: auto;
+    border: 0;
+  }
+  #fourLink {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: auto;
+    border: 0;
+  }
+  .linkWrapper {
+    /*Nothing if too small*/
+  }
+}
+
+.subsubtitle {
+  font-weight: 200;
+  font-size: 15px;
+}
