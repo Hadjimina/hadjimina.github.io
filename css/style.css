@@ -213,6 +213,7 @@ hr {
 .linkWrapper {
   margin: 0 auto;
   width: 50%;
+  font-weight: bold;
 }
 
 #oneLink {
