@@ -99,12 +99,6 @@ section.module.parallax-3 {
   font-size: 30px;
 }
 
-.subtitle {
-  /*font-weight: 400;*/
-  font-size: 20px;
-  padding-bottom: 15px;
-}
-
 .element {
   height: 3em;
   line-height: 1.5em;
@@ -213,7 +207,6 @@ hr {
 .linkWrapper {
   margin: 0 auto;
   width: 50%;
-  font-weight: bold;
 }
 
 #oneLink {
@@ -270,7 +263,32 @@ hr {
   }
 }
 
+.subtitle {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
 .subsubtitle {
   font-weight: 200;
   font-size: 15px;
+  padding-bottom: 0px;
+}
+
+
+/*Link styling*/
+
+a:link {
+  color: #FFFFFF
+}
+
+a:active {
+  color: #808080
+}
+
+a:visited {
+  color: #FFFFFF
+}
+
+a:hover {
+  color: #808080
 }
